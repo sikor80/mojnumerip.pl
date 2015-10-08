@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+    
+<br>
+<strong><p class="center">Twój numer IP to:</p></strong>
+<h1>{{ ip }}</h1>        
+<br>
+<p class="center"><a href="mapa">Zobacz na mapie.</a></p> 
+<p class="center">Pamiętaj, że aby zobaczyć mapę, musisz pozwolić przeglądarce (komunikat pojawi się u góry) ujawnić twoją lokalizacje.</p>
+<br>
+<strong><p>Co to jest numer IP?</p></strong>
+<p>Numer lub adres IP to unikalny identifikator, który wykorzystywany jest przez urządzenia podłączone do sieci w celu umożliwienia komunikacji między nimi. Każde urządzenie takie jak komputer, router czy serwer musi posiadać taki unikalny adres. Na podstawie numeru IP wiadomo, skąd wysyłana jest dana informacja i dokąd powinna ona dotrzeć. <a href="http://pl.wikipedia.org/wiki/Numer_IP">[Czytaj dalej]</a></p>
+
+
+{% endblock %}
+    

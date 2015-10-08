@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wyświetla numer ip / adres ip, z którego łączysz się z siecią">
+    <meta name="keywords" content="ip, numer ip, adres ip, mój numer ip, mój adres ip, sprawdz swój numer ip"/>
+    <meta name="verify-v1" content="bh8JTmTPD/+C8vY5xLafuvYAqgKU7axfy0dEW+KG74k=" />
+    <meta name="author" content="sikor.net">
+    <title>MojNumerIP.pl - Mój numer IP | Mój adres IP | Sprawdź swój IP | Sprawdź mój IP</title>
+
+{% load staticfiles %}
+    
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-2 ad">
+{% include "includes/google_ad_left.html" %}
+      </div>
+
+      <div class="col-md-8">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+          <h2>MojNumerIP.pl</h2>
+          <p class="center">Wyświetla numer IP / adres IP, z którego łączysz się z Internetem</p>
+        </div>
+
+{% block main %}
+{% endblock main %}
+
+    <hr />
+    <footer><a href="/">home</a> | <a href="/mapa">mapa</a> | <a href="/kontakt">e-mail</a>
+      <p>&copy; 2015 <a href="http://sikor.net">sikor.net</a></p>
+    </footer>
+    </div>
+  </div>
+
+      <div class="col-md-2 ad">
+{% include "includes/google_ad_right.html" %}
+      </div>
+    </div>
+  </div>
+
+{% include "includes/google_analytics.html" %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+
+body {
+	font-size: 13px;
+	background: #F2F2F2;}
+	
+div {
+    padding: 15px;
+	border-radius: 20px;
+	}
+   
+
+
+p {
+	text-align:justify; 
+	}
+
+p.center {
+	text-align:center; 
+	}
+
+
+h1, h2 {
+	text-align: center;}
+	
+footer {
+   font-size: 12px;
+   text-align: center;
+   color: grey;}
+
+footer p {
+    font-size: 11px;
+    text-align: center}   
+div.ad {
+	min-height: 600px;
+    text-align: center;
+    	}  
+
+.map {
+   min-height: 400px;
+  } 
+
+
+div.jumbotron {
+    background-color: #5cb85c}
