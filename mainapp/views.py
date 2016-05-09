@@ -23,10 +23,7 @@ def index(request):
 
 
 def mapa(request):
-    a = ""
-    context = {
-            'a': a,
-            }
+    context = {}
     return render(request, 'mainapp/mapa.html', context)
 
 
