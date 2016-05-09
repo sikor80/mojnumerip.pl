@@ -38,14 +38,14 @@ def kontakt(request):
             message_and_email = "From: " + cd['email'] + " Message: " + cd['message']
             mail.send_mail(sender=SENDER_ADDR,
                           to=TO_ADDR,
-                          subject="Message from mojnumerip.pl",
+                          subject="Wiadomosc z mojnumerip.pl",
                           body=
                           "From: " + cd['email'] 
                           + "\n" +
                           "Subject: " + cd['subject'] 
                           + "\n" + 
                           "Message: " + cd['message'])
-            messages.add_message(request, messages.SUCCESS, 'Email wysłany. Dziękujemy!')
+            messages.add_message(request, messages.SUCCESS, 'Wiadomosc wysłana. Dziękujemy!')
 
             return HttpResponseRedirect('/kontakt')
     else:
